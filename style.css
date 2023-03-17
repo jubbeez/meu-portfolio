@@ -1,0 +1,307 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    padding:0;
+    margin:0;
+    list-style: none;
+    border:0;
+}
+
+html { 
+    min-width: 320px; 
+    max-width: 1400px; 
+}
+
+.container {
+    background: #E5E5E5;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.julia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre {
+    padding: 1%;
+}
+
+.sobre img {
+    width: 30%;
+    border-radius: 70%;
+    display: inline-block;
+    padding: 1%;
+}
+
+.sobre p {
+    font-size: 14px;
+    padding: 1%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+nav .link {
+    text-decoration: none;
+    font-weight: bold;
+    width: 375px;
+    padding: 5%;
+}
+
+.sobre nav img {
+    width: auto;
+    height: auto;
+    border-radius: 0%;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #EAF2FD;
+    padding: 5% 1%;
+}
+
+.sobre-mim p {
+    padding-top: 5%;
+}
+
+.sobre-mim img {
+    border-radius: 0%;
+    padding-top: 3%;
+}
+
+.skills h1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.skills-line {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 5%;
+}
+
+.skills-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    width: 40%;
+    height: 18vh;
+    margin: 2%;
+    padding: 3%;
+}
+
+
+
+.formacao {
+    background: #EAF2FD;
+    padding: 10% 10%;
+    text-align: center;
+    /* top, right, bottom, left */
+}
+
+.formacao-line {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.formacao-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 90%;
+    padding: 10%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+
+.formacao-box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+.formacao-box h2, .formacao-box p {
+    margin: 2%;
+}
+
+.btn {
+    padding: 2vh;
+    border-radius: 26px;
+    text-decoration: none;
+    margin: 2%;
+    background-color: #EAF2FD;
+    border: 2px solid;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.formacao img {
+    width: 30vw;
+}
+
+.alura img {
+    width: 30%;
+}
+
+.experiencia {
+    padding: 10% 10%;
+    text-align: center;
+}
+
+.xp-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 20% 0;
+}
+
+.experiencia img {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-rep {
+    padding: 2vh;
+    text-decoration: none;
+    color: #2A7AE4;
+    background-color: #EAF2FD;
+    border: 2px solid;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-rep:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.btn-rep-azul {
+    padding: 2vh;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 2%;
+    background-color: #2A7AE4;
+    border: 2px solid #2A7AE4;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-rep-azul:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #EAF2FD;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+footer h3 {
+    padding: 3% 0;
+}
+
+form {
+    font-size: 70%;
+    margin: 0 0 10px
+}
+
+
+.input-padrao {
+    resize:none;
+    display: block;
+    margin: 0 0 20px;
+    padding: 3% 2%;
+    width: 50%;
+}
+
+.enviar {
+    padding: 3%;
+    background: #2A7AE4;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    transition: 1s all;
+    /* faz uma transição de todos os elementos com atraso de 1s */
+
+    cursor: pointer;
+}
+
+.enviar:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #FFFFFF;
+}
+
+/* pro tablet */
+
+@media screen and (min-width: 768px) {
+
+}
