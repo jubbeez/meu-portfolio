@@ -9,7 +9,6 @@
 
 html { 
     min-width: 320px; 
-    max-width: 1400px; 
 }
 
 .container {
@@ -55,6 +54,12 @@ p {
 
 .sobre {
     padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-dados p{
+    margin: 2% 0;
 }
 
 .sobre img {
@@ -64,29 +69,24 @@ p {
     padding: 1%;
 }
 
-.sobre p {
-    font-size: 14px;
-    padding: 1%;
-}
-
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     font-size: 14px;
     line-height: 16px;
 }
 
 nav .link {
+    display: flex;
     text-decoration: none;
     font-weight: bold;
-    width: 375px;
-    padding: 5%;
+    padding: 1%;
 }
 
 .sobre nav img {
-    width: auto;
-    height: auto;
     border-radius: 0%;
+    width: 2vw;
 }
 
 .sobre-mim {
@@ -106,9 +106,13 @@ nav .link {
     padding-top: 3%;
 }
 
+.skills{
+    padding-top: 3%;
+}
+
 .skills h1 {
     text-align: center;
-    padding-top: 5%;
+    padding: 2%;
 }
 
 .skills-line {
@@ -124,11 +128,13 @@ nav .link {
     justify-content: flex-start;
     background-color: #FFFFFF;
     width: 40%;
-    height: 18vh;
+    height: 17vh;
     margin: 2%;
     padding: 3%;
 }
-
+.skills-img-diferente {
+    width: 20%;
+}
 
 
 .formacao {
@@ -300,8 +306,61 @@ form {
     background-color: #FFFFFF;
 }
 
-/* pro tablet */
+/* media pro tablet */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
+
+    h1 {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    
+    h3 {
+        font-size: 21px;
+        line-height: 20px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .apresentacao{
+        padding: 2%
+    }
+
+    .sobre img {
+        width: 20%;
+        border-radius: 70%;
+        display: flex;
+    }
+    .sobre{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2%;
+    }
+    .sobre-dados{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    nav {
+        font-size: 17px;
+    }
+    .skills-box {
+        width: 23%;
+        height: 10vh;
+    }
+    .skills-line {
+        padding: 0%;
+        width: 100%;
+    }
+    
 
 }
