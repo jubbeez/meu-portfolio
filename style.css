@@ -467,7 +467,7 @@ form {
         text-align: center;
         margin-right: 1%;
         margin-left: 1%;
-        width: 700px;
+        width: 900px;
         font-size: 22px;
         line-height: 25px;
         font-weight: 400;
@@ -531,7 +531,7 @@ form {
     }
 
     #javaidoar{
-        width: 60%;
+        width: 50%;
     }
 
     .input-padrao {
