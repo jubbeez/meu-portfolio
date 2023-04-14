@@ -434,31 +434,31 @@ form {
 
 @media screen and (min-width: 1024px){
     h1 {
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 700;
         line-height: 60px;
     }
     
     h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 30px;
         font-weight: 700;
     }
     
     h3 {
         font-weight: 400;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 30px;
     }
     
     p {
-        font-size: 20px;
+        font-size: 25px;
         line-height: 25px;
         font-weight: 400;
     }
 
     a{
-        font-size: 20px;
+        font-size: 25px;
         line-height: 25px;
         text-decoration: none;
     }
