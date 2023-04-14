@@ -39,12 +39,17 @@ p {
     font-weight: 400;
 }
 
+.nav-cabecalho {
+    display: none;
+}
+
 .apresentacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
 }
+
 
 .julia {
     display: flex;
@@ -66,7 +71,7 @@ p {
     width: 30%;
     border-radius: 70%;
     display: inline-block;
-    padding: 1%;
+    padding: 3%;
 }
 
 nav {
@@ -94,11 +99,11 @@ nav .link {
     flex-direction: column;
     align-items: flex-start;
     background-color: #EAF2FD;
-    padding: 5% 1%;
+    padding: 3% 1%;
 }
 
 .sobre-mim p {
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .sobre-mim img {
@@ -107,12 +112,12 @@ nav .link {
 }
 
 .skills{
-    padding-top: 3%;
+    padding: 3% 1%;
 }
 
-.skills h1 {
+.skills h2 {
     text-align: center;
-    padding: 2%;
+    padding: 1%;
 }
 
 .skills-line {
@@ -132,8 +137,13 @@ nav .link {
     margin: 2%;
     padding: 3%;
 }
-.skills-img-diferente {
-    width: 20%;
+
+.skills-img{
+    width: 70%;
+}
+
+.outras-img {
+    width: 40%;
 }
 
 
@@ -191,24 +201,33 @@ nav .link {
 }
 
 .formacao img {
-    width: 30vw;
+    width: 20vw;
 }
 
 .alura img {
-    width: 30%;
+    width: 13vw;
 }
 
 .experiencia {
     padding: 10% 10%;
+}
+
+.experiencia-titulo{
     text-align: center;
+    padding: 3% 1%;
 }
 
 .xp-box {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 8px;
-    margin: 20% 0;
+    margin: 10% 0;
+}
+
+#javaidoar{
+width: 100%;
 }
 
 .experiencia img {
@@ -218,7 +237,7 @@ nav .link {
 .buttons {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 300px;
 }
 
 .btn-rep {
@@ -266,7 +285,7 @@ footer h3 {
 }
 
 form {
-    font-size: 70%;
+    width: 100%;
     margin: 0 0 10px
 }
 
@@ -302,7 +321,7 @@ form {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     background-color: #FFFFFF;
 }
 
@@ -361,6 +380,168 @@ form {
         padding: 0%;
         width: 100%;
     }
+
+    .descricao-xp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+    }
+    .formacao {
+        background: #EAF2FD;
+        padding: 5% 2%;
+        text-align: center;
+        /* top, right, bottom, left */
+    }
+    .formacao-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    
+    .formacao-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        width: 25%;
+        padding: 10%;
+        margin: 5% 2% 3% 2%;
+     /* top, right, bottom, left */
+    }
+    
+    
+    .formacao-box ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vh;
+    }
+        
+
+    form {
+        width: 90%;
+    }
+    .input-padrao {
+        width: 100%;
+    }
+}
+
+
+/* media pro computador*/
+
+@media screen and (min-width: 1024px){
+    h1 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    p {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+
+    a{
+        font-size: 20px;
+        line-height: 25px;
+        text-decoration: none;
+    }
+    .nav-cabecalho{
+        display: flex;
+        text-align: center;
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 700px;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .nav-cabecalho #negrito{
+        font-weight: bold;
+    }
+
+    .apresentacao {
+        position: fixed;
+        width: 97%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+    }
+
+    .email{
+        display: none;
+    }
+
+    .sobre-dados nav{
+        width: 60%;
+        font-size: 20px;
+    }
+
+    .sobre-mim {
+        padding: 5% 1%;
+    }
+
+    .btn {
+        font-size: 23px;
+    }
     
 
+    .experiencia{
+        padding: 2%;
+    }
+    .buttons {
+        width: 500px;
+    }
+
+    .xp-box img {
+        width: 50%;
+    }
+
+    .xp-box {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin: 3% 0;
+    }
+
+    .descricao-xp{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 0% 5%;
+    }
+
+    #javaidoar{
+        width: 60%;
+    }
+
+    .input-padrao {
+        font-size: 23px;
+        line-height: 16px;
+    }
+    
+    .enviar {
+        font-size: 20px;
+        line-height: 16px;
+    }
+    
 }

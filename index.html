@@ -17,7 +17,17 @@
                 <img src="./img/estrela.svg">
                 <h3>Júlia Guarnieri</h3>
             </div>
-            <p>juliaguarnieri@gmail.com</p>
+            <div>
+                <p class="email">juliaguarnieri@gmail.com</p>
+                <nav class="nav-cabecalho">
+                    <a href="#sobre-mim">Sobre mim</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#formacao">Formação</a>
+                    <a href="#experiencia">Experiência</a>
+                    <p id="negrito">juliaguarnieri@gmail.com</p>
+
+                </nav>
+            </div>
         </div>
 
         <div class="sobre container">
@@ -38,8 +48,8 @@
 <body>
 
 
-    <div class="sobre-mim">
-        <h1>Sobre mim</h1>
+    <div class="sobre-mim" id="sobre-mim">
+        <h2>Sobre mim</h2>
         <p>Cursei três semestres de psicologia antes de migrar de área e entrar na faculdade de Engenharia de Software à distância na UNINTER. 
             Sou apaixonada por programação e sempre procuro por oportunidades de estudo que me ajudam a desenvolver minhas hábilidades técnicas.
 
@@ -48,8 +58,8 @@
         <img src="./img/assinatura.png">
     </div>
 
-    <div class="skills container">
-        <h1>Skills</h1>
+    <div class="skills container" id="skills">
+        <h2>Skills</h2>
         <div class="skills-line">
             <div class="skills-box">
                 <ul>
@@ -77,21 +87,27 @@
             </div>
             <div class="skills-box">
                 <ul>
-                    <li class="skills-img-diferente"><img src="./img/java.png"></li>
+                    <li class="skills-img"><img src="./img/java.svg"></li>
                     <li class="skills-name"><h2>Java</h2></li>
                 </ul>
             </div>
             <div class="skills-box">
                 <ul>
-                    <li class="skills-img"><img src="./img/python.png"></li>
+                    <li class="skills-img outras-img"><img src="./img/mysql.svg"></li>
+                    <li class="skills-name"><h2>MySQL</h2></li>
+                </ul>
+            </div>
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-img outras-img"><img src="./img/python.svg"></li>
                     <li class="skills-name"><h2>Python</h2></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="formacao">
-        <h1>Formação acadêmica</h1>
+    <div class="formacao" id="formacao">
+        <h2>Formação acadêmica</h2>
 
             <div class="formacao-line">
                 <div class="formacao-box">
@@ -113,7 +129,7 @@
                 <div class="formacao-box">
                     <ul>
                         <li class="lista-formacao alura"><img src="./img/alura.png"></li>
-                        <h2>One Next One</h2>
+                        <h2>One Next Education</h2>
                         <p>2023 (cursando)</p>
                         <button class="btn btn_alura">Saiba mais</button>
                     </ul>
@@ -131,45 +147,52 @@
 
 
 
-    <div class="experiencia container">
-        <h1>Experiência Profissional</h1>
+    <div class="experiencia container" id="experiencia">
+        <h2 class="experiencia-titulo">Experiência Profissional</h2>
 
         <div class="xp-box">
-            <img src="./img/barbearia.png">
-            <h2>Barbearia Alura</h2>
-            <h3>Site da Barbearia Alura</h3>
-            <div class="buttons">
-                <a class="btn-rep" href="https://github.com/jubbeez/Barbearia-Alura" target="_blank">Repositório</a>
-                <a class="btn-rep-azul" href="https://jubbeez.github.io/Barbearia-Alura/"target="_blank">Ver Demo</a>
+                <img src="./img/barbearia.png">
+            <div class="descricao-xp">
+                <h2>Barbearia Alura</h2>
+                <h3>Site da Barbearia Alura</h3>
+                <div class="buttons">
+                    <a class="btn-rep" href="https://github.com/jubbeez/Barbearia-Alura" target="_blank">Repositório</a>
+                    <a class="btn-rep-azul" href="https://jubbeez.github.io/Barbearia-Alura/"target="_blank">Ver Demo</a>
+                </div>
             </div>
         </div>
         <div class="xp-box">
             <img src="./img/decodificador.png">
-            <h2>Decodificador de Texto</h2>
-            <h3>Challenge Alura Codificador</h3>
-            <div class="buttons">
-                <a class="btn-rep" href="https://github.com/jubbeez/Encriptador-Desencriptador" target="_blank">Repositório</a>
-                <a class="btn-rep-azul" href="https://jubbeez.github.io/Encriptador-Desencriptador/" target="_blank">Ver Demo</a>
+            <div class="descricao-xp">
+                <h2>Decodificador de Texto</h2>
+                <h3>Challenge Alura Codificador</h3>
+                <div class="buttons">
+                    <a class="btn-rep" href="https://github.com/jubbeez/Encriptador-Desencriptador" target="_blank">Repositório</a>
+                    <a class="btn-rep-azul" href="https://jubbeez.github.io/Encriptador-Desencriptador/" target="_blank">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="xp-box">
+            <img id="javaidoar" src="./img/javaidoar.png">
+            <div class="descricao-xp">
+                <h2>JAVAi Doar Sangue</h2>
+                <h3>Projeto Java Para Cadastrar Doadores/Hemocentros</h3>
+                <div class="buttons">
+                    <a class="btn-rep" href="https://github.com/jubbeez/Projeto_JavaiDoarSangue/tree/main/JavaiDoarSangue" target="_blank">Repositório</a>
+                </div>
             </div>
         </div>
         <div class="xp-box">
             <img src="./img/locatto.png">
-            <h2>Design de App de Imóveis</h2>
-            <h3>Prototipação de Interface Mobile</h3>
-            <div class="buttons">
-                <a class="btn-rep" href="https://github.com/jubbeez/Design-de-site-com-figma" target="_blank">Repositório</a>
-                <a class="btn-rep-azul" href="https://www.figma.com/file/ppvSRnX0zxCjUCUq1V1IbY/Locatto-Im%C3%B3veis?node-id=0%3A1&t=tnhTtTBd62QStSVs-1"target="_blank">Ver Demo</a>
+            <div class="descricao-xp">
+                <h2>Design de App de Imóveis</h2>
+                <h3>Prototipação de Interface Mobile</h3>
+                <div class="buttons">
+                    <a class="btn-rep" href="https://github.com/jubbeez/Design-de-site-com-figma" target="_blank">Repositório</a>
+                    <a class="btn-rep-azul" href="https://www.figma.com/file/ppvSRnX0zxCjUCUq1V1IbY/Locatto-Im%C3%B3veis?node-id=0%3A1&t=tnhTtTBd62QStSVs-1"target="_blank">Ver Demo</a>
+                </div>
             </div>
         </div>
-
-        <!-- <div class="xp-box">
-            <h2></h2>
-            <h3></h3>
-            <div class="buttons">
-                <a class="btn-rep" href="https://jubbeez.github.io/Encriptador-Desencriptador/" target="_blank">Repositório</a>
-                <a class="btn-rep-azul" href="https://github.com/jubbeez/Encriptador-Desencriptador"target="_blank">Ver Demo</a>
-            </div>
-        </div> -->
     </div>
 
 
@@ -178,26 +201,39 @@
 </body>
 
 <footer>
-    <h1>Contato</h1>
+    <h2>Contato</h2>
     <h3>Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato assim que possível.</h3>
 
 
-    <form>
+    <form
+        action="https://formspree.io/f/xrgvojkb"
+        method="POST"
+        >
+
         <label for="nomeSobrenome"></label>
-        <input type="text" id="nomeSobrenome clas" class="input-padrao" required placeholder="Nome">
+        <input type="text" name="nome" id="nomeSobrenome clas" class="input-padrao" required placeholder="Nome">
         
         <label for="email"></label>
-        <input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+        <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
         
         <label for="assunto"></label>
-        <textarea id="assunto" class="input-padrao" required placeholder="Assunto"></textarea>
+        <textarea name="assunto" id="assunto" class="input-padrao" required placeholder="Assunto"></textarea>
         
         <label for="mensagem"></label>
-        <textarea id="mensagem" cols="60" rows="10" class="input-padrao" required placeholder="Mensagem"></textarea>
+        <textarea name="mensagem" id="mensagem" cols="60" rows="10" class="input-padrao" required placeholder="Mensagem"></textarea>
     
-        <input type="submit" value="Enviar mensagem" class="enviar">
-    
+        <input type="submit" value="Enviar mensagem" class="enviar" data-button>
+
     </form>
+
+    <div id="success-message" style="display:none">
+        Sua mensagem foi enviada com sucesso!
+      </div>
+      
+      <div id="error-message" style="display:none">
+        Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.
+      </div>
+
 </footer>
 
 <p class="copy">&copy; Desenvolvido por Júlia Guarnieri 2023</p>
