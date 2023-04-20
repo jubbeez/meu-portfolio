@@ -38,7 +38,8 @@ btn_gen.addEventListener('click', ()=> {
 
 // ENVIO DE FORMULÁRIO
   
-const linkCurriculo = document.querySelector('a[href="https://www.figma.com/file/7hELK8O1pDjnP0qhRjQgqo/Julia-Guarnieri-Dev?node-id=0-1&t=qt70eFNo3MdbIWuK-0"]');
+const linkCurriculo = document.querySelector('a[href="./Curriculo-Julia-Guarnieri.pdf"]');
+
 
 linkCurriculo.addEventListener('click', (event) => {
   event.preventDefault();
