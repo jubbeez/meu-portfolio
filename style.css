@@ -9,10 +9,11 @@
 
 html { 
     min-width: 320px; 
+    background: #E5E5E5;
 }
 
 .container {
-    background: #E5E5E5;
+    background: #D4E4FA;
 }
 
 h1 {
@@ -98,7 +99,6 @@ nav .link {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #EAF2FD;
     padding: 3% 1%;
 }
 
@@ -143,12 +143,11 @@ nav .link {
 }
 
 .outras-img {
-    width: 40%;
+    width: 30%;
 }
 
 
 .formacao {
-    background: #EAF2FD;
     padding: 10% 10%;
     text-align: center;
     /* top, right, bottom, left */
@@ -506,6 +505,7 @@ form {
     .experiencia{
         padding: 2%;
     }
+
     .buttons {
         width: 500px;
     }

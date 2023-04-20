@@ -35,31 +35,27 @@ btn_gen.addEventListener('click', ()=> {
     });
 });
 
+
 // ENVIO DE FORMULÁRIO
-
-const form = document.querySelector('#contact-form');
-const successMessage = document.querySelector('#success-message');
-const errorMessage = document.querySelector('#error-message');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
   
-  const data = new FormData(form);
-  
-  try {
-    await fetch('https://formspree.io/f/xrgvojkb', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json'
-      },
-      body: data
-    });
-    
-    form.reset();
-    successMessage.style.display = 'block';
-  } catch (error) {
-    errorMessage.style.display = 'block';
-  }
+const linkCurriculo = document.querySelector('a[href="https://www.figma.com/file/7hELK8O1pDjnP0qhRjQgqo/Julia-Guarnieri-Dev?node-id=0-1&t=qt70eFNo3MdbIWuK-0"]');
+
+linkCurriculo.addEventListener('click', (event) => {
+  event.preventDefault();
+  const url = event.target.href;
+  const fileName = 'julia-guarnieri-dev.pdf';
+  downloadFile(url, fileName);
 });
+
+function downloadFile(url, fileName) {
+  const element = document.createElement('a');
+  element.setAttribute('href', url);
+  element.setAttribute('download', fileName);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+
 
   
