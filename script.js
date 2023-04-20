@@ -43,7 +43,7 @@ const linkCurriculo = document.querySelector('a[href="https://www.figma.com/file
 linkCurriculo.addEventListener('click', (event) => {
   event.preventDefault();
   const url = event.target.href;
-  const fileName = 'julia-guarnieri-dev.pdf';
+  const fileName = 'Curriculo.Julia.Guarnieri.pdf';
   downloadFile(url, fileName);
 });
 
