@@ -49,6 +49,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
+    background: #E5E5E5;
 }
 
 
@@ -387,7 +388,6 @@ form {
         height: 150px;
     }
     .formacao {
-        background: #EAF2FD;
         padding: 5% 2%;
         text-align: center;
         /* top, right, bottom, left */
@@ -400,14 +400,9 @@ form {
     }
     
     .formacao-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #FFFFFF;
         width: 25%;
         padding: 10%;
         margin: 5% 2% 3% 2%;
-     /* top, right, bottom, left */
     }
     
     
