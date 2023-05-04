@@ -38,12 +38,11 @@ btn_gen.addEventListener('click', ()=> {
 
 // ENVIO DE FORMULÁRIO
   
-const linkCurriculo = document.querySelector('a[href="./Curriculo-Julia-Guarnieri.pdf"]');
-
+const linkCurriculo = document.querySelector('.link a');
 
 linkCurriculo.addEventListener('click', (event) => {
   event.preventDefault();
-  const url = event.target.href;
+  const url = './img/Curriculo.Julia.Guarnieri.pdf';
   const fileName = 'Curriculo.Julia.Guarnieri.pdf';
   downloadFile(url, fileName);
 });
@@ -57,6 +56,7 @@ function downloadFile(url, fileName) {
   element.click();
   document.body.removeChild(element);
 }
+
 
 
   
