@@ -42,8 +42,8 @@ const linkCurriculo = document.querySelector('.link a');
 
 linkCurriculo.addEventListener('click', (event) => {
   event.preventDefault();
-  const url = './img/Curriculo.Julia.Guarnieri.pdf';
-  const fileName = 'Curriculo.Julia.Guarnieri.pdf';
+  const url = './img/julia-guarnieri-resume.pdf';
+  const fileName = 'julia-guarnieri-resume.pdf';
   downloadFile(url, fileName);
 });
 
